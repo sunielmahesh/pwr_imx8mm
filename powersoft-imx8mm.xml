@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="imx-5.4.70-2.3.1.xml" />
+
+  <remote fetch="https://gitea.amarulasolutions.com/powersoft/meta-engicam"  name="METAENGICAM"/>
+
+  <project name="meta-engicam" path="sources/meta-engicam" remote="METAENGICAM" revision="ca90b17945f68d20a1ea4f1e74562de743c2917d"/>
+
+</manifest>
