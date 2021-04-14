@@ -2,8 +2,12 @@
 <manifest>
   <include name="imx-5.4.70-2.3.1.xml" />
 
-  <remote fetch="https://gitea.amarulasolutions.com/powersoft/meta-engicam"  name="METAENGICAM"/>
+  <remote fetch="git://git.yoctoproject.org/" name="yocto"/>
+  <remote fetch="ssh://gitea@gitea.amarulasolutions.com:38745/powersoft/" name="METAENGICAM"/>
+  <remote fetch="git://git.yoctoproject.org/" name="SECURITY" />
 
+  <project name="poky" path="sources/poky" remote="yocto" revision="d88d62c20d7d8da85f02edb170dae0280624ad7e"/>
   <project name="meta-engicam" path="sources/meta-engicam" remote="METAENGICAM" revision="ca90b17945f68d20a1ea4f1e74562de743c2917d"/>
+  <project name="meta-security" path="sources/meta-security" remote="SECURITY" revision="52e83e6b7e57bf352fd6770466996530dece3da5"/>
 
 </manifest>
